@@ -30,6 +30,9 @@ nnoremap <silent> J 5j
 vnoremap <silent> K 5k
 vnoremap <silent> J 5j
 
+nnoremap <silent> - :Exp<CR>
+nnoremap <silent> ;r <C-^>"
+
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
@@ -37,5 +40,3 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
-
