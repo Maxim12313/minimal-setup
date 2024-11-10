@@ -14,6 +14,7 @@ set autoindent
 set scrolloff=8
 set number
 set noswapfile
+set cursorline
 
 " Insert mode bindings
 inoremap <silent> <C-f> <Right>
@@ -40,3 +41,5 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+
