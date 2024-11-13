@@ -1,45 +1,39 @@
-colorscheme desert
+colorscheme habamax
 
 syntax on
 filetype on
 
-set hlsearch
-set incsearch
 set clipboard=unnamed
 set tabstop=4
 set shiftwidth=4
-set expandtab
 set smartindent
-set autoindent
 set scrolloff=8
 set number
 set noswapfile
 set cursorline
+set backspace=indent,eol,start
 
-" Insert mode bindings
-inoremap <silent> <C-f> <Right>
-inoremap <silent> <C-b> <Left>
-inoremap <silent> <C-n> <Down>
-inoremap <silent> <C-p> <Up>
-inoremap <silent> <C-a> <Home>
-inoremap <silent> <C-e> <End>
-inoremap <silent> <A-BS> <C-o> dw
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-e> <End>
 
-" Normal and Visual mode bindings for moving up and down by 5 lines
-nnoremap <silent> K 5k
-nnoremap <silent> J 5j
-vnoremap <silent> K 5k
-vnoremap <silent> J 5j
+nnoremap J 5j
+nnoremap K 5k
+vnoremap J 5j
+vnoremap K 5k
 
-nnoremap <silent> - :Exp<CR>
-nnoremap <silent> ;r <C-^>"
 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
+
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-
+nnoremap ;r <C-^>"
+nnoremap - :Exp<CR>
+nnoremap _ :e!<CR>
